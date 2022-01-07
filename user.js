@@ -32,7 +32,7 @@ const connection = mysql.createConnection(dbinfo);
 await connection.connectAsync();
 
 
-let sql = `INSERT INTO message (username,password,mobile,address) values ("akshay","arya","8652678794","navi-mumbai")`;
+let sql = `INSERT INTO message (username,password,mobile,address) values ("akshay","akshay123","8652678794","navi-mumbai")`;
 
 connection.queryAsync(sql,[message.username, message.password, message.mobile, message.address]);
 console.log("Record added");
